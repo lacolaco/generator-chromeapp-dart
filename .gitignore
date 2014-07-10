@@ -1,2 +1,5 @@
 node_modules/
 temp/
+
+*/pubspec.lock
+*/packages/
