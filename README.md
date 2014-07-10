@@ -38,10 +38,10 @@ export PATH=$PATH:path/to/dart/dart-sdk/bin
 
 ### gruntタスクについて
 
-- `grunt build`
+- `grunt build`  
 プロジェクトをビルドし、デバッグ可能な状態にします。
 
-- `grunt debug`
+- `grunt debug`  
 プロジェクトをビルドし、デバッグを開始します。プロジェクト内のファイルに変更があると自動でビルドしてChromeアプリを更新します。
 
 
