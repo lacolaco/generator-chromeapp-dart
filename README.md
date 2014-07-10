@@ -36,6 +36,15 @@ export PATH=$PATH:path/to/dart/dart-sdk/bin
 1. chrome://extensions を開き、`パッケージ化されていない拡張機能を読み込む`から、`/app`ディレクトリを読み込みます。
 2. 起動してください。
 
+### gruntタスクについて
+
+- `grunt build`
+プロジェクトをビルドし、デバッグ可能な状態にします。
+
+- `grunt debug`
+プロジェクトをビルドし、デバッグを開始します。プロジェクト内のファイルに変更があると自動でビルドしてChromeアプリを更新します。
+
+
 ## 今後の予定
 
 - cca対応（Androidのみ）
