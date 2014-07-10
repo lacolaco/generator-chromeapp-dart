@@ -1,46 +1,45 @@
 # generator-chromeapp-dart [![Build Status](https://secure.travis-ci.org/laco0416/generator-chromeapp-dart.png?branch=master)](https://travis-ci.org/laco0416/generator-chromeapp-dart)
 
-> [Yeoman](http://yeoman.io) generator
+> [Yeoman](http://yeoman.io) generator for Chrome App in Dart
 
 
-## Getting Started
+## 使い方
 
-### What is Yeoman?
-
-Trick question. It's not a thing. It's this guy:
-
-![](http://i.imgur.com/JHaAlBJ.png)
-
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
-
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
+### Yeomanとgenerator-chromeapp-dartのインストール
 
 ```bash
-$ npm install -g yo
-```
+$ npm install -g grunt-cli bower yo generator-chrome-app-dart
+``` 
 
-### Yeoman Generators
+### Dartのインストール
 
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
-
-To install generator-chromeapp-dart from npm, run:
+[Dart Editor](https://www.dartlang.org/tools/download.html)をインストールします。その後環境変数を追加してください。
 
 ```bash
-$ npm install -g generator-chromeapp-dart
+export DART_SDK=path/to/dart/dart-sdk
+export PATH=$PATH:path/to/dart/dart-sdk/bin
 ```
 
-Finally, initiate the generator:
+### アプリの新規作成
 
-```bash
-$ yo chromeapp-dart
-```
+1. プロジェクトのルートディレクトリを作ります (/sample)
+2. 作ったディレクトリに移動します  
+```$ cd sample```
+3. ジェネレータを起動します。  
+```$ yo chromeapp-dart```
+4. 実行します  
+```$ grunt debug```
+5. http://localhost:9000　を開きます。 **"Hello Dart!"**
 
-### Getting To Know Yeoman
+### Chromeアプリとして実行
 
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
+1. chrome://extensionを開き、`パッケージ化されていない拡張機能を読み込む`から、`/app`ディレクトリを読み込みます。
+2. 起動してください。
 
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
+## 今後の予定
 
+- cca対応（Androidのみ）
+- サンプルプロジェクトの種類を増やす
 
 ## License
 
