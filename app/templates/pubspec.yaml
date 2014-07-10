@@ -1,0 +1,4 @@
+name: hello_dart
+
+dependencies:
+  browser: any

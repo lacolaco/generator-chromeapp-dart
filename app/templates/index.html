@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title><%= appName %></title>
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<h1 id="title"></h1>
+
+<script type="application/dart" src="dart/index.dart"></script>
+<!-- dart.js detects whether the app is opened in Dartium or Chrome and
+rewites the .dart includes appropriately. Use a derivative of the copy
+in packages/browser/dart.js, as that does not yet handle the CSP
+compliant "precompiled" version. It must come after any dart scripts.
+-->
+<script src="js/browser_dart_csp_safe.js"></script>
+</body>
+</html>
