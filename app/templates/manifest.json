@@ -10,8 +10,7 @@
     "background": {
       "scripts": [
         "js/main.js",
-        "js/chromereload.js",
-        "packages/browser/dart.js"
+        "js/chromereload.js"
       ]
     }
   }
