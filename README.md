@@ -29,11 +29,11 @@ export PATH=$PATH:path/to/dart/dart-sdk/bin
 ```$ yo chromeapp-dart```
 4. 実行します  
 ```$ grunt debug```
-5. http://localhost:9000　を開きます。 **"Hello Dart!"**
+5. http://localhost:9000 を開きます。 **"Hello Dart!"**
 
 ### Chromeアプリとして実行
 
-1. chrome://extensionを開き、`パッケージ化されていない拡張機能を読み込む`から、`/app`ディレクトリを読み込みます。
+1. chrome://extensions を開き、`パッケージ化されていない拡張機能を読み込む`から、`/app`ディレクトリを読み込みます。
 2. 起動してください。
 
 ## 今後の予定
