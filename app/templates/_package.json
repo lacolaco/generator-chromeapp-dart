@@ -2,12 +2,14 @@
   "name": "hello_dart",
   "version": "0.0.0",
   "dependencies": {},
-  "devDependencies": {
+  "devDependencies": {<% if (gulp) { %>
+    "gulp": "~3.8.6",
+    "gulp-dart2js": "~0.0.2"<% } else {%>
     "grunt": "~0.4.1",
     "grunt-contrib-connect": "~0.4.0",
     "grunt-contrib-watch": "~0.5.2",
     "grunt-exec": "~0.4.5",
     "load-grunt-tasks": "~0.1.0",
-    "time-grunt": "~0.1.1"
+    "time-grunt": "~0.1.1"<% } %>
   }
 }
