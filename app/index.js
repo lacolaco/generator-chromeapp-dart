@@ -23,6 +23,14 @@ var ChromeappDartGenerator = yeoman.generators.Base.extend({
     // Have Yeoman greet the user.
     this.log(yosay('Welcome to the marvelous ChromeappDart generator!'));
 
+    this.option('gulp', {
+      desc: 'Use gulp',
+      type: Boolean,
+      default: false
+    });
+
+    this.gulp = this.options.gulp;
+
     var prompts = [
       {
         type: 'input',
@@ -51,7 +59,11 @@ var ChromeappDartGenerator = yeoman.generators.Base.extend({
     this.directory('styles', 'app/styles');
     this.directory('images', 'app/images');
 
-    this.copy('Gruntfile.js', 'Gruntfile.js');
+    if (this.gulp) {
+      this.copy
+    } else {
+      this.copy('Gruntfile.js', 'Gruntfile.js');
+    }
     this.copy('_package.json', 'package.json');
     this.copy('_bower.json', 'bower.json');
     this.copy('compile.sh', 'app/compile.sh');
