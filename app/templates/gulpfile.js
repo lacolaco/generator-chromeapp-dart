@@ -10,6 +10,6 @@ gulp.task('debug', function(){
 });
 
 gulp.task('build', function(){
-  gulp.src('app/dart')
-  .pipe(dart('app/dart'));
+  gulp.src('app/dart/*.dart')
+  .pipe(dart('app/dart/'));
 });
