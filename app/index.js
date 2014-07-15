@@ -72,10 +72,10 @@ var ChromeappDartGenerator = yeoman.generators.Base.extend({
       this.copy('gulpfile.js', 'gulpfile.js');
     } else {
       this.copy('Gruntfile.js', 'Gruntfile.js');
+      this.copy('compile.sh', 'app/compile.sh');
     }
     this.template('_package.json', 'package.json');
     this.copy('_bower.json', 'bower.json');
-    this.copy('compile.sh', 'app/compile.sh');
     this.copy('pubspec.yaml', 'app/pubspec.yaml');
 
     this.template('index.html', 'app/index.html');
