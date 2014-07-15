@@ -23,6 +23,7 @@ describe('chromeapp-dart generator', function () {
       '.jshintrc',
       '.editorconfig',
       '.bowerrc',
+      '.gitignore',
       'package.json',
       'bower.json',
       'app/index.html',

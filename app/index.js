@@ -56,6 +56,10 @@ var ChromeappDartGenerator = yeoman.generators.Base.extend({
     }.bind(this));
   },
 
+  git: function() {
+    this.copy('gitignore', '.gitignore');
+  },
+
   app: function () {
     this.mkdir('app');
     this.mkdir('app/dart');
