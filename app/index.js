@@ -37,11 +37,20 @@ var ChromeappDartGenerator = yeoman.generators.Base.extend({
         name: 'appName',
         message: 'Would you like to name this app?',
         default: "Hello Dart!"
+      },
+      {
+        type: 'list',
+        name: 'buildSystem',
+        message: 'Do you want to use which "build system"?',
+        choices: ['Grunt', 'gulp']
       }
     ];
 
     this.prompt(prompts, function (props) {
       this.appName = props.appName;
+      if(props.buildSystem === 'gulp') {
+        this.gulp = true;
+      }
 
       done();
     }.bind(this));
@@ -60,7 +69,7 @@ var ChromeappDartGenerator = yeoman.generators.Base.extend({
     this.directory('images', 'app/images');
 
     if (this.gulp) {
-      this.copy
+      this.copy('gulpfile.js', 'gulpfile.js');
     } else {
       this.copy('Gruntfile.js', 'Gruntfile.js');
     }
