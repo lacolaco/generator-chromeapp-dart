@@ -23,6 +23,7 @@ describe('chromeapp-dart generator', function () {
       '.jshintrc',
       '.editorconfig',
       '.bowerrc',
+      '.gitignore',
       'package.json',
       'bower.json',
       'app/index.html',
@@ -38,4 +39,22 @@ describe('chromeapp-dart generator', function () {
       done();
     });
   });
+
+  it('should create gulpfile', function(done){
+    var expected = [
+      'gulpfile.js'
+    ];
+
+    helpers.mockPrompt(this.app, {
+      'appName': "test app"
+    });
+    this.app.options['skip-install'] = true;
+    this.app.options['gulp'] = true;
+    this.app.run({}, function () {
+      helpers.assertFile(expected);
+      done();
+    });
+
+  });
+
 });
